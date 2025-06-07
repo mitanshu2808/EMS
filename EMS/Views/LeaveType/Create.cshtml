@@ -1,0 +1,44 @@
+﻿@using EMS.Data.Entities.Leaves;
+@using EMS.Data.FormModels.EmpLeave;
+@model LeaveTypeVM
+
+@{
+    ViewData["Title"] = "Add LeaveType";
+}
+
+<h1>Add Leave Type</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group col-md-4">
+                <label asp-for="Name" class="control-label"></label>
+                <select asp-for="Name" class="form-control" id="leaveTypeName">
+                    <option disabled>Select LeaveType</option>
+                    @foreach (string leaveType in Enum.GetNames(typeof(LeaveTypesEnum)))
+                    {
+                        <option value="@leaveType">@leaveType</option>
+                    }
+                </select>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="DefaultDays" class="control-label"></label>
+                <input asp-for="DefaultDays" class="form-control" />
+                <span asp-validation-for="DefaultDays" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-4">
+                <input type="submit" value="Add LeaveType" class="btn btn-primary" /> 
+                <a class="btn btn-secondary" asp-action="LeaveTypeList">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

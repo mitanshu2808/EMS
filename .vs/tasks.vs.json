@@ -1,0 +1,20 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-EMS",
+      "appliesTo": "EMS/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-EMS",
+      "appliesTo": "EMS/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-EMS",
+      "appliesTo": "EMS/",
+      "type": "launch"
+    }
+  ]
+}

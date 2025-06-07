@@ -1,0 +1,60 @@
+﻿@model Data.FormModels.LoginViewModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Login";
+}
+<section class="d-flex justify-content-center align-content-center">
+    <div class="row">
+        <div class="col">
+            <div class="card" style="border-radius: 1rem;">
+                <div class="row g-0">
+                    <div class="col-md-6 col-lg-6 d-none d-md-block">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                             alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                    </div>
+                    <div class="col-md-6 col-lg-6 d-flex align-items-center">
+                        <div class="card-body p-4 text-black">
+                            <form id="account" method="post">
+                                <div class="d-flex align-items-center mb-3 pb-1">
+                                    <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                                    <span class="h1 fw-bold mb-0">LOGIN</span>
+                                </div>
+
+                                <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Please enter your email and password!</h5>
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="form-outline mb-4">
+                                    <input asp-for="Email" id="form2Example27" placeholder="Email" class="form-control form-control-lg" autocomplete="username" aria-required="true" />
+                                    @*<label asp-for="Email" class="form-label" for="form2Example27"></label>*@
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    @*<label asp-for="Password" class="form-label" for="form2Example27"></label>*@
+                                    <input asp-for="Password" placeholder="Password" id="form2Example27" class="form-control form-control-lg" autocomplete="current-password" aria-required="true" />
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+
+                                <div class="checkbox">
+                                    <label asp-for="RememberMe" class="form-label">
+                                        <input class="form-check-input" asp-for="RememberMe" />
+                                        @Html.DisplayNameFor(m => m.RememberMe)
+                                    </label>
+                                </div>
+                                <div class="pt-1 mb-4">
+                                    <button class="btn btn-dark btn-lg btn-block" type="submit">Login</button>
+                                </div>
+
+                                <p class="mb-5 pb-lg-2" style="color: #393f81;">
+                                    Don't have an account? <br />
+                                    <a class="small text-muted" id="register" asp-controller="Account" asp-action="Register">Register your account</a>
+                                </p>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

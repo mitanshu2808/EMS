@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Data.FormModels.RegisterViewModel>
+@{
+    ViewData["Title"] = "EmployeList";
+}
+
+<h1>Employe Data</h1>
+<div class="d-flex justify-content-end mr-3 mb-3">
+    <a asp-area="" asp-controller="Employe" asp-action="Create" class="btn btn-primary">Add New Employee</a>
+</div>
+
+<table id="tblData" class="table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Address</th>
+            <th>DateofBirth</th>
+            <th>DateofJoin</th>
+            <th>AadharNumber</th>
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(userItem => user.Email)</td>
+                <td>@Html.DisplayFor(userItem => user.Address)</td>
+                <td>@Html.DisplayFor(userItem => user.DateofBirth)</td>
+                <td>@Html.DisplayFor(userItem => user.DateofJoin)</td>
+                <td>@Html.DisplayFor(userItem => user.AadharNumber)</td>
+                <td><a asp-action="EditEmployee" class="btn btn-warning" asp-route-id="@user.Id">Edit</a></td>
+                <td>
+                    <div class="row">
+                        <div class="col-2">
+                            <form method="post" asp-action="DeleteEmployee" asp-route-id="@user.Id">
+                                <button type="submit" class="btn btn-danger" onclick="return (confirm('Are you sure you want to delete this record?'))">
+                                    Delete</button>
+                               @*  <button type="submit" class="btn btn-danger" onclick="deleteConfirmation('@Url.Action("DeleteEmployee", "YourController", new { id = @user.Id })')">
+                                    Delete
+                                </button> *@
+                            </form>
+                        </div>
+                    </div>
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    function deleteConfirmation() {
+        swal({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    swal("deleted!", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("category is safe!");
+                }
+            });
+    }
+</script>

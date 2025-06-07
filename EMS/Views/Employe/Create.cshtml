@@ -1,0 +1,92 @@
+﻿@model Data.FormModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Add Employee";
+}
+
+<section class="h-100 bg-light">
+    <div class="container py-4 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+                <div class="card my-3">
+                    <div class="row g-0">
+                        <div class="col-xl-6">
+                            <div class="card-body p-md-4 text-black">
+                                <h3 class="mb-5 text-uppercase">Add new Employee</h3>
+                                <form id="employeeAddForm" asp-route-returnUrl="ReturnUrl" method="post">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <label asp-for="Firstname" class="form-label" for="form3Example9"></label>
+                                                <input asp-for="Firstname" id="form3Example9" class="form-control form-control-lg" />
+                                                <span asp-validation-for="Firstname" class="text-danger  form-text"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <label asp-for="Lastname" class="form-label" for="form3Example9"></label>
+                                                <input asp-for="Lastname" id="form3Example90" class="form-control form-control-lg" />
+                                                <span asp-validation-for="Lastname" class="text-danger  form-text"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <label asp-for="DateofBirth" class="form-label" for="form3Example9"></label>
+                                                <input asp-for="DateofBirth" id="form3Example9" class="form-control form-control-lg" />
+                                                <span asp-validation-for="DateofBirth" class="text-danger  form-text"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <label asp-for="DateofJoin" class="form-label" for="form3Example9"></label>
+                                                <input asp-for="DateofJoin" id="form3Example90" class="form-control form-control-lg" />
+                                                <span asp-validation-for="DateofJoin" class="text-danger  form-text"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <label asp-for="Address" class="form-label" for="form3Example9"></label>
+                                        <input asp-for="Address" id="form3Example90" class="form-control form-control-lg" />
+                                        <span asp-validation-for="Address" class="text-danger  form-text"></span>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <label asp-for="AadharNumber" class="form-label" for="form3Example9"></label>
+                                        <input asp-for="AadharNumber" id="form3Example90" class="form-control form-control-lg" />
+                                        <span asp-validation-for="AadharNumber" class="text-danger  form-text"></span>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <label asp-for="Email" class="form-label" for="form3Example9"></label>
+                                        <input asp-for="Email" id="form3Example90" class="form-control form-control-lg" />
+                                        <span asp-validation-for="Email" class="text-danger  form-text"></span>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <label asp-for="Password" class="form-label" for="form3Example9"></label>
+                                        <input asp-for="Password" id="form3Example90" class="form-control form-control-lg" />
+                                        <span asp-validation-for="Password" class="text-danger  form-text"></span>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <label asp-for="ConfirmPassword" class="form-label" for="form3Example9"></label>
+                                        <input asp-for="ConfirmPassword" id="form3Example90" class="form-control form-control-lg" />
+                                        <span asp-validation-for="ConfirmPassword" class="text-danger  form-text"></span>
+                                    </div>
+                                    <div class="form-floating">
+                                    </div>
+                                    <div class="form-check d-flex justify-content-center mb-5">
+                                        <input type="submit" value="Add Employee" class="btn btn-warning btn-lg ms-2" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

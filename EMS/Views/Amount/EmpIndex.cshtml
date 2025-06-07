@@ -1,0 +1,43 @@
+﻿@using Data.FormModels;
+@using EMS.Data.FormModels.EmpSalary;
+
+@model EMS.Data.FormModels.EmpSalary.EmployeeDataVm
+@{
+    ViewData["Title"] = "My Salary Details";
+}
+
+<h1>My Salary </h1>
+
+<table id="tblData" class="table">
+    <thead>
+        <tr>
+            <th> Employee Name </th>
+            <th> Salary Amount </th>
+            <th> Salary Date </th>
+            <th> Action </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model is not null && Model.AmountVMs is not null)
+        {
+            foreach (EmpSalaryVM item in Model.AmountVMs)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RequestingEmployee.Firstname) @Html.DisplayFor(modelItem => item.RequestingEmployee.Lastname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NetSalary)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Salarydate)
+                    </td>
+                    <td>
+                        <a class="btn btn-outline-success" asp-action="DownloadPayslip" asp-route-Id="@item.Id">Download PaySlip</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+

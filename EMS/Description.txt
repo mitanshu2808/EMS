@@ -1,0 +1,17 @@
+﻿====Employee management system(Leave mng, Salary mng,HRMS)====
+
+Role 
+SuperAdmin, HR(Admin), Employee
+
+==SuperAdmin Functionality
+--Employee Details(CRUD)
+--Leave Types(CRUD)
+--Employees Salary(CRUD)
+--Leave Request Log
+	=
+	
+==HR(Admin) Functionality
+==Employee Functionality
+
+---Popup for delete confirmation
+--Display Username

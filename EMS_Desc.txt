@@ -1,0 +1,30 @@
+EMS Description:
+================
+
+1. Super admin module.  
+2. Admin Module.
+3. Employee module.
+
+1. Super admin module:
+- Manage Employee (CRUD)
+- Manage Leave (CRUD LeaveTypes)
+- Manage Employee Salary
+- Manage Employee Leave requests
+- Manage Profile
+
+2. Employee module:
+- Manage Profile
+- View Salary Details
+- Request Leave 
+
+
+3. Admin Module:
+- Manage Employee (CRUD)
+- Manage Leave (CRUD LeaveTypes)
+- Manage Leave Allocations To Employees
+- Manage Employee Leave requests
+- Manage Profile
+
+
+Doubt : Shall we add leave allocation module for super admin ? And...
+What to Show after clicking on review in Leave Request Log page ?

@@ -1,0 +1,59 @@
+﻿@model EMS.Data.FormModels.EmpLeave.LeaveRequestVM
+@{
+    ViewData["Title"] = "Leave Detail";
+
+}
+
+<h1>Leave Detail</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RequestingEmployee.Firstname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RequestingEmployee.Firstname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LeaveType.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LeaveType.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DateRequested)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DateRequested)
+        </dd>
+    </dl>
+</div>
+<div>
+    <div class="d-flex col-md-12 me-2">
+        <form asp-action="UpdateLeaveStatus" asp-route-id="@Model.Id" asp-route-status="@true">
+            <input type="submit" class="btn btn-outline-success m-1" value="Approve" />
+        </form>
+        <form asp-action="UpdateLeaveStatus" asp-route-id="@Model.Id" asp-route-status="@false">
+            <input type="submit" class="btn btn-outline-danger m-1" value="Reject" />
+        </form>
+        <a asp-action="LeaveRequestList" class="m-1 btn btn-outline-secondary" asp-controller="LeaveRequest">Back to List</a>
+    </div>
+
+    @*<button type="submit" class="btn btn-outline-success badge badge-success m-2" asp-action="UpdateLeaveStatus" asp-route-id="@Model.Id" asp-route-status="@true">
+    Approve </button> |
+    <a class="btn btn-outline-danger badge badge-danger m-2" asp-action="UpdateLeaveStatus" asp-route-id="@Model.Id" asp-route-status="@false">
+    Reject </a> |*@
+</div>

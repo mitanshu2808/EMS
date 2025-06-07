@@ -1,0 +1,131 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EMS
+build_property.RootNamespace = EMS
+build_property.ProjectDir = C:\Users\HARDIK-005\Desktop\EMS-08-06-2024\EMS\EMS\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\HARDIK-005\Desktop\EMS-08-06-2024\EMS\EMS
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Amount/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1vdW50XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Amount/EmpIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1vdW50XEVtcEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Amount/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW1vdW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Employe/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Employe/EditEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxFZGl0RW1wbG95ZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Employe/EmployeList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxFbXBsb3llTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/LeaveAllocation/EditLeaveAllocation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVBbGxvY2F0aW9uXEVkaXRMZWF2ZUFsbG9jYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/LeaveAllocation/LeaveAllocationDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVBbGxvY2F0aW9uXExlYXZlQWxsb2NhdGlvbkRldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/LeaveAllocation/ListEmployees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVBbGxvY2F0aW9uXExpc3RFbXBsb3llZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/LeaveRequest/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVSZXF1ZXN0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/LeaveRequest/LeaveDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVSZXF1ZXN0XExlYXZlRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/LeaveRequest/LeaveRequestList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVSZXF1ZXN0XExlYXZlUmVxdWVzdExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/LeaveRequest/MyLeave.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVSZXF1ZXN0XE15TGVhdmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/LeaveType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVUeXBlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/LeaveType/EditLeaveType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVUeXBlXEVkaXRMZWF2ZVR5cGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/LeaveType/LeaveTypeList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVUeXBlXExlYXZlVHlwZUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Myprofile/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlwcm9maWxlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Myprofile/MyProfileDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlwcm9maWxlXE15UHJvZmlsZURldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Shared/_AdminLTE.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxURS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HARDIK-005/Desktop/EMS-08-06-2024/EMS/EMS/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2ygzio75rl

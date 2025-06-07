@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Data.FormModels.RegisterViewModel>
+@{
+    ViewData["Title"] = "List Employees";
+}
+
+<h1>List Of Employees</h1>
+
+<table id="tblData" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Firstname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Lastname)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Firstname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lastname)
+                </td>
+
+                <td>
+                    <a class="btn btn-outline-success" asp-action="LeaveAllocationDetail" asp-route-id="@item.Id">
+                        <i class="fa fa-search"></i> Leave Allocation Detail
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

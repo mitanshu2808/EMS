@@ -1,0 +1,75 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@* @model EMS.Models.TaskModel *@
+
+@* @{ *@
+@*     ViewData["Title"] = "Assign Task"; *@
+@* } *@
+
+@* <h2>Assign Task</h2> *@
+
+@* <form asp-action="Create" method="post"> *@
+@*     <div class="mb-3"> *@
+@*         <label class="form-label">Title</label> *@
+@*         <input type="text" asp-for="Title" class="form-control" required /> *@
+@*     </div> *@
+
+@*     <div class="mb-3"> *@
+@*         <label class="form-label">Description</label> *@
+@*         <textarea asp-for="Description" class="form-control"></textarea> *@
+@*     </div> *@
+
+@*     <div class="mb-3"> *@
+@*         <label class="form-label">Deadline</label> *@
+@*         <input type="date" asp-for="Deadline" class="form-control" required /> *@
+@*     </div> *@
+
+@*     <div class="mb-3"> *@
+@*         <label class="form-label">Assign To</label> *@
+@*         <select asp-for="EmployeeId" class="form-control" required> *@
+@*             @foreach (var emp in ViewBag.Employees) *@
+@*             { *@
+@*                 <option value="@emp.EmployeeId">@emp.FullName</option> *@
+@*             } *@
+@*         </select> *@
+@*     </div> *@
+
+@*     <button type="submit" class="btn btn-success">Save Task</button> *@
+@* </form> *@
+
+@model EMS.Data.Entities.Tasks.TaskModel
+
+@{
+    ViewData["Title"] = "Create Task";
+}
+
+<h2>Create New Task</h2>
+
+<form asp-action="Create" method="post">
+    <input asp-for="AssignedBy" type="hidden"/>
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Deadline" class="control-label"></label>
+        <input asp-for="Deadline" type="date" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AssignedTo" class="control-label">Assign to Employee</label>
+        <select asp-for="AssignedTo" class="form-control" asp-items="ViewBag.Employees">
+            <option value="">-- Select Employee --</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Save Task</button>
+    <a asp-action="Index" class="btn btn-secondary mt-3">Cancel</a>
+</form>

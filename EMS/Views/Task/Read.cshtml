@@ -1,0 +1,66 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<EMS.Data.Entities.Tasks.TaskModel> 
+@{
+    ViewData["Title"] = "Task List";
+}
+
+<h2>Task List</h2>
+@* <a class="btn btn-primary mb-2" asp-action="Create">Assign New Task</a> *@
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Deadline</th>
+            <th>Assigned To</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var EmpList = (ViewBag.Employees as List<Employee>);
+            string GetEmployeeName(string userId)
+            {
+                return EmpList.FirstOrDefault(x => x.Id == userId)?.Firstname;
+            }
+        }
+        @foreach (var task in Model) 
+        { 
+            <tr> 
+                <td>@task.Title</td> 
+                <td>@task.Description</td> 
+                <td>@task.Deadline.ToShortDateString()</td>
+                <td>
+                    @(GetEmployeeName(task.AssignedTo))
+                </td>
+                <td> 
+                    @if (task.IsCompleted) 
+                    { 
+                        <span class="badge bg-success">Completed</span> 
+                    } 
+                    else 
+                    { 
+                        <span class="badge bg-warning">Pending</span> 
+                    } 
+                </td> 
+                <td>
+                    @if (User.IsInRole("Admin"))
+                    { 
+                        <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@task.TaskId">Edit</a> 
+                        <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@task.TaskId">Delete</a>
+                    }
+
+                    <form asp-action="MarkAsCompleted" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@task.TaskId" />
+                        <button type="submit" class="btn btn-sm btn-success">Mark as Completed</button>
+                    </form>
+                </td> 
+            </tr> 
+        } 
+    </tbody>
+</table>
+

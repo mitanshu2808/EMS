@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Verify OTP";
+}
+
+<h2>Verify OTP</h2>
+
+<p>We have sent an OTP to your email: <b>@ViewBag.Email</b></p>
+
+@if (ViewBag.Error != null)
+{
+    <p style="color: red;">@ViewBag.Error</p>
+}
+
+<form method="post">
+    <label>Enter OTP:</label>
+    <input type="text" name="otp" required />
+    <button type="submit">Verify OTP</button>
+</form>

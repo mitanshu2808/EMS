@@ -1,0 +1,364 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS\\EMS.csproj": {}
+  },
+  "projects": {
+    "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Data\\EMS.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Data\\EMS.Data.csproj",
+        "projectName": "EMS.Data",
+        "projectPath": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Data\\EMS.Data.csproj",
+        "packagesPath": "C:\\Users\\mitan\\.nuget\\packages\\",
+        "outputPath": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mitan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Repository\\EMS.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Repository\\EMS.Repository.csproj",
+        "projectName": "EMS.Repository",
+        "projectPath": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Repository\\EMS.Repository.csproj",
+        "packagesPath": "C:\\Users\\mitan\\.nuget\\packages\\",
+        "outputPath": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mitan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Data\\EMS.Data.csproj": {
+                "projectPath": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Data\\EMS.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Service\\EMS.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Service\\EMS.Service.csproj",
+        "projectName": "EMS.Service",
+        "projectPath": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Service\\EMS.Service.csproj",
+        "packagesPath": "C:\\Users\\mitan\\.nuget\\packages\\",
+        "outputPath": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mitan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Data\\EMS.Data.csproj": {
+                "projectPath": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Data\\EMS.Data.csproj"
+              },
+              "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Repository\\EMS.Repository.csproj": {
+                "projectPath": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Repository\\EMS.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS\\EMS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS\\EMS.csproj",
+        "projectName": "EMS",
+        "projectPath": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS\\EMS.csproj",
+        "packagesPath": "C:\\Users\\mitan\\.nuget\\packages\\",
+        "outputPath": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mitan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Data\\EMS.Data.csproj": {
+                "projectPath": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Data\\EMS.Data.csproj"
+              },
+              "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Repository\\EMS.Repository.csproj": {
+                "projectPath": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Repository\\EMS.Repository.csproj"
+              },
+              "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Service\\EMS.Service.csproj": {
+                "projectPath": "D:\\IT\\MDT\\EMS-08-06-2024\\EMS-08-06-2024\\EMS\\EMS.Service\\EMS.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.10.0, )"
+            },
+            "Optivem.Framework.Infrastructure.FluentValidation": {
+              "target": "Package",
+              "version": "[1.0.23, )"
+            },
+            "Syncfusion.Pdf.Net.Core": {
+              "target": "Package",
+              "version": "[22.1.39, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model EMS.Data.Entities.Tasks.TaskModel
+
+@{
+    ViewData["Title"] = "Delete Task";
+}
+
+<h2>Delete Task</h2>
+<p>Are you sure you want to delete this task?</p>
+
+<div>
+    <strong>Title:</strong> @Model.Title <br />
+    <strong>Description:</strong> @Model.Description <br />
+    <strong>Deadline:</strong> @Model.Deadline.ToShortDateString() <br />
+    <strong>Status:</strong> @Model.Status
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="TaskId" />
+    <button type="submit" class="btn btn-danger">Yes, Delete</button>
+    <a asp-action="Read" class="btn btn-secondary">Cancel</a>
+</form>
+
+
