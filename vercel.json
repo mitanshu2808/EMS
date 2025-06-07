@@ -1,6 +1,19 @@
 {
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/", "destination": "/index.html" }
-  ]
+"version": 2,
+"builds": [
+  {
+    "src": "publish/**/*.dll",
+    "use": "@vercel/dotnet"
+  }
+],
+"routes": [
+  {
+    "src": "/api/data/:collectionName",
+    "dest": "/api/data/:collectionName"
+  },
+  {
+    "src": "/(.*)",
+    "dest": "/index.html"
+  }
+]
 }
